@@ -9,87 +9,76 @@ import java.time.LocalDate;
 
 public class EmployeTest {
 
-    //Employé dateEmbauche avec date 2 ans avant aujourd'hui =>
-    //2 années d'ancienneté
     @Test
-    public void testAncienneteDateEmbaucheNmoins2(){
-        //Given
-        Employe employe = new Employe();
-        employe.setDateEmbauche(LocalDate.now().minusYears(2));
-
-        //When
-        Integer nbAnnees = employe.getNombreAnneeAnciennete();
-
-        //Then
-        Assertions.assertThat(nbAnnees).isEqualTo(2);
-    }
-
-    //Date dans le futur => 0
-    @Test
-    public void testAncienneteDateEmbaucheNplus2(){
-        //Given
-        Employe employe = new Employe();
-        employe.setDateEmbauche(LocalDate.now().plusYears(2));
-
-        //When
-        Integer nbAnnees = employe.getNombreAnneeAnciennete();
-
-        //Then
-        Assertions.assertThat(nbAnnees).isEqualTo(0);
-    }
-
-    //Date aujourd'hui => 0
-    @Test
-    public void testAncienneteDateEmbaucheAujourdhui(){
-        //Given
-        Employe employe = new Employe();
-        employe.setDateEmbauche(LocalDate.now());
-
-        //When
-        Integer nbAnnees = employe.getNombreAnneeAnciennete();
-
-        //Then
-        Assertions.assertThat(nbAnnees).isEqualTo(0);
-    }
-
-    //Date d'embauche indéfinie => 0
-    @Test
-    public void testAncienneteDateEmbaucheNull(){
+    public void testGetNbAnneeAncienneteDtEmbaucheNull(){
         //Given
         Employe employe = new Employe();
         employe.setDateEmbauche(null);
 
         //When
-        Integer nbAnnees = employe.getNombreAnneeAnciennete();
+        Integer nbAnneeAnciennete = employe.getNombreAnneeAnciennete();
 
         //Then
-        Assertions.assertThat(nbAnnees).isEqualTo(0);
+        Assertions.assertThat(nbAnneeAnciennete).isEqualTo(0);
     }
 
-    @ParameterizedTest
+    @Test
+    public void testGetNbAnneeAncienneteDtEmbaucheToday(){
+        //Given
+        Employe employe = new Employe();
+        employe.setDateEmbauche(LocalDate.now());
+
+        //When
+        Integer nbAnneeAnciennete = employe.getNombreAnneeAnciennete();
+
+        //Then
+        Assertions.assertThat(nbAnneeAnciennete).isEqualTo(0);
+    }
+
+    @Test
+    public void testGetNbAnneeAncienneteDtEmbaucheTodayPlus2y(){
+        //Given
+        Employe employe = new Employe();
+        employe.setDateEmbauche(LocalDate.now().plusYears(2));
+
+        //When
+        Integer nbAnneeAnciennete = employe.getNombreAnneeAnciennete();
+
+        //Then
+        Assertions.assertThat(nbAnneeAnciennete).isEqualTo(0);
+    }
+
+    @Test
+    public void testGetNbAnneeAncienneteDtEmbaucheTodayMinus3y(){
+        //Given
+        Employe employe = new Employe();
+        employe.setDateEmbauche(LocalDate.now().minusYears(3));
+
+        //When
+        Integer nbAnneeAnciennete = employe.getNombreAnneeAnciennete();
+
+        //Then
+        Assertions.assertThat(nbAnneeAnciennete).isEqualTo(3);
+    }
+
+    @ParameterizedTest(name = "Employé matricule {0}, {1} années d ancienneté, {2}, {3} gagnera une prime de {4}")
     @CsvSource({
-            "1, 'T12345', 0, 1.0, 1000.0",
-            "1, 'T12345', 0, 0.5, 500.0",
-            "1, 'M12345', 0, 1.0, 1700.0",
-            "2, 'T12345', 0, 1.0, 2300.0",
+            "'T12345', 0, 1.0, 1, 1000.0",
+            "'T12345', 0, 0.5, 1, 500.0"
     })
-    public void testPrimeAnnuelle(Integer performance, String matricule,
-        Integer nbAnneesAnciennete, Double tempsPartiel, Double prime){
+    public void testGetPrimeAnnuelle(String matricule, Integer nbAnneeAnciennete, Double tempsPartiel, Integer performance, Double primeFinale){
         //Given
         Employe employe = new Employe();
         employe.setMatricule(matricule);
-        employe.setPerformance(performance);
-        employe.setDateEmbauche(LocalDate.now().minusYears(nbAnneesAnciennete));
+        employe.setDateEmbauche(LocalDate.now().minusYears(nbAnneeAnciennete));
         employe.setTempsPartiel(tempsPartiel);
+        employe.setPerformance(performance);
 
         //When
-        Double primeCalculee = employe.getPrimeAnnuelle();
+        Double prime = employe.getPrimeAnnuelle();
 
         //Then
-        Assertions.assertThat(primeCalculee).isEqualTo(prime);
+        Assertions.assertThat(prime).isEqualTo(primeFinale);
     }
-
-
-
 
 }
