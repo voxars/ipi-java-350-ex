@@ -23,17 +23,31 @@ Répondre de nouveau aux questions. Qu'est-ce qui a changé ?
 
 ## Intégration continue
 
-   - Rajouter la configuration nécessaire pour Travis dans le projet.
-   - Vous connecter à Travis https://travis-ci.org avec votre compte Github.
-   - Configurer le projet et vérifier que le premier build se passe correctement. Après chaque exercice, vérifier que le build passe toujours...
+   1.	Ajoute à la racine du dossier, un fichier .travis.yml
+   2.	Ajouter dans ce fichier : les paramètres de config (`language: java`)
+   3.	Pushez le projet sur Git 
+   4.	Se connecter sur https://travis-ci.com/
+   5.	Allez dans Setting et activer l'intégration GitHub Apps
+   6.	Sélectionner votre repository
+   7.	Cliquer sur `Sync account`
+   8.	Cliquer sur `Trigger build` dans la liste d’options du build s'il ne se lance pas tout seul
+   9.	Patienter le temps du lancement du build 
+   10. Après chaque exercice, vérifier que le build passe toujours...
  
 ## Evaluation de la qualité
 
-   - Connectez-vous à SonarQube https://about.sonarcloud.io/ avec votre compte Github
-   - Ajouter votre projet dans Sonar
-   - Modifier votre configuration Travis pour lancer une analyse après chaque build
-   - Vérifier que tout est ok
-   - Analyser le premier rapport de Sonar
+   1.	Aller sur https://sonarcloud.io/
+   2.	Se connecter en liant son compte Github 
+   3.	Cliquer sur `New project`.
+   4.	Sélectionner le repository correspodnant
+   5.	Cliquer sur `Analyse new project`
+   6.	Cliquer `Create a project manually`
+   7.	Créer le token puis le récupérer en le copiant
+   8.	Dans Travis, aller dans `environnement variables`
+   9.	`SONAR_TOKEN` > le token > `Add`
+   10. Récupère le code yml qu'il faut ajouter dans le .travis.yml (attention à bien copier ce qui est à l'écran, pas à cliquer sur le bouton `Copy`)
+   11. Pushez puis relancer votre build sur Travis-ci.com
+   12. Analyser le premier rapport de Sonar
 
 ## Tests unitaires
 
