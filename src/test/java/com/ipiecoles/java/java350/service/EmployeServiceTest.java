@@ -27,10 +27,8 @@ public class EmployeServiceTest {
     @InjectMocks
     EmployeService employeService = new EmployeService();
 
-
-    // Tests embaucheEmploye
     @Test
-    public void testEmbaucheEmployeWithoutEmploye() throws EmployeException {
+    public void testEmbaucheEmployeSanstEmploye() throws EmployeException {
         //given
         Mockito.when(employeRepository.findLastMatricule()).thenReturn(null);
         Mockito.when(employeRepository.findByMatricule("T00001")).thenReturn(null);
@@ -52,7 +50,7 @@ public class EmployeServiceTest {
     }
 
     @Test
-    public void testEmbaucheEmployeWithEmploye() throws EmployeException {
+    public void testEmbaucheEmployeAvecEmploye() throws EmployeException {
         //given
         Mockito.when(employeRepository.findLastMatricule()).thenReturn("11111");
         Mockito.when(employeRepository.findByMatricule("T11112")).thenReturn(null);
@@ -76,7 +74,7 @@ public class EmployeServiceTest {
     }
 
     @Test
-    public void testEmbaucheEmployeWithTempsPartielNull() throws EmployeException {
+    public void testEmbaucheEmployeAvecTempsPartielNull() throws EmployeException {
         //given
         Mockito.when(employeRepository.findLastMatricule()).thenReturn(null);
         Mockito.when(employeRepository.findByMatricule("T00001")).thenReturn(null);
@@ -103,7 +101,7 @@ public class EmployeServiceTest {
     }
 
     @Test
-    public void testEmbaucheEmployeWithSameMatricule() throws EmployeException {
+    public void testEmbaucheEmployeAvecMemeMatricule() throws EmployeException {
         //given
         Mockito.when(employeRepository.findLastMatricule()).thenReturn(null);
         Mockito.when(employeRepository.findByMatricule("T00001")).thenReturn(new Employe());
@@ -118,7 +116,7 @@ public class EmployeServiceTest {
     }
 
     @Test
-    public void testEmbaucheEmployeWithMaxMatriculeReach() throws EmployeException {
+    public void testEmbaucheEmployeAvecMaxMatriculeReach() throws EmployeException {
         //given
         Mockito.when(employeRepository.findLastMatricule()).thenReturn("99999");
 
@@ -131,10 +129,8 @@ public class EmployeServiceTest {
         Assertions.assertThat(t).isInstanceOf(EmployeException.class).hasMessage("Limite des 100000 matricules atteinte !");
     }
 
-
-    // Tests calculPerformanceCommercial
     @Test
-    public void testCalculPerformanceCommercialWithCaTraiteNegatif(){
+    public void testCalculPerformanceCommercialOuCasTraiterNegatif(){
         //given
 
         //when
@@ -147,7 +143,7 @@ public class EmployeServiceTest {
     }
 
     @Test
-    public void testCalculPerformanceCommercialWithObjectifCaNegatif(){
+    public void testCalculPerformanceCommercialOuObjectifCANegatif(){
         //given
 
         //when
@@ -160,7 +156,7 @@ public class EmployeServiceTest {
     }
 
     @Test
-    public void testCalculPerformanceCommercialWithMatriculeVautT(){
+    public void testCalculPerformanceCommercialOuMatriculeVautT(){
         //given
 
         //when
@@ -173,7 +169,7 @@ public class EmployeServiceTest {
     }
 
     @Test
-    public void testCalculPerformanceCommercialWithMatriculeNotInBDD(){
+    public void testCalculPerformanceCommercialNonExistant(){
         //given
         Mockito.when(employeRepository.findByMatricule("C12345")).thenReturn(null);
 
@@ -185,35 +181,33 @@ public class EmployeServiceTest {
         //then
         Assertions.assertThat(t).isInstanceOf(EmployeException.class).hasMessage("Le matricule C12345 n'existe pas !");
     }
+
     @ParameterizedTest
     @CsvSource({
-            "50,1",  //cas 1
-            "90,8",  //cas 2
-            "100,10", //cas 3
-            "110,11", //cas 4
-            "150,15"  //cas 5 + perf > perfMoyenne
-    })
-    public void testCalculPerformanceCommercial(
-            Long caTraite,
-            Integer perforfanceFinale
-    ){
-        //given
-        Mockito.when(employeRepository.findByMatricule("C12345")).thenReturn(
-                new Employe("A","B","C12345",LocalDate.now(),2000.0, 10,1.0
-                ));
-        Mockito.when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn(12.0);
+            "10,1,5", //cas 1
+            "47,3,5", //cas 2
+            "50,5,5", //cas 3
+            "53,6,5", //cas 4
+            "65,9,5", //cas 5
+            "70,13,8", //cas 6 perf>moyenne
 
+    })
+    public void testToutLesCasDeCalculPerformanceCommercial(Long ca, Integer perforfance, Integer performanceInitiale){
+        //given
+        Mockito.when(employeRepository.findByMatricule("C12345")).thenReturn(new Employe("Henry", "Richard", "C12345", LocalDate.now(), 3500.0, performanceInitiale, 1.0));
+        Mockito.when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn(10.0);
         //when
         try {
-            employeService.calculPerformanceCommercial("C12345", caTraite, 100L);
+            employeService.calculPerformanceCommercial("C12345", ca, 50L);
         } catch (EmployeException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
         //then
         ArgumentCaptor<Employe> employeCaptor = ArgumentCaptor.forClass(Employe.class);
         Mockito.verify(employeRepository).save(employeCaptor.capture());
         Employe employe = employeCaptor.getValue();
-        Assertions.assertThat(employe.getPerformance()).isEqualTo(perforfanceFinale);
+        Assertions.assertThat(employe.getPerformance()).isEqualTo(perforfance);
     }
+
 }
