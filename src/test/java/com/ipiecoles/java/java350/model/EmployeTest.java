@@ -1,5 +1,6 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
 import com.ipiecoles.java.java350.model.Employe;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -96,7 +97,7 @@ public class EmployeTest {
         Assertions.assertThat(primeObtenue).isEqualTo(prime);
     }
 
-
+    //test pour augmenterSalaire avec pourcentage negatif
     @Test
     public void testAugmenterSalaireAvecPourcentageNegatif() {
         //Given
@@ -109,6 +110,7 @@ public class EmployeTest {
         Assertions.assertThat(thrown).isInstanceOf(EmployeException.class).hasMessage("Pourcentage invalide");
     }
 
+    //test pour augmenterSalaire avec pourcentage > 100
     @Test
     public void testAugmenterSalaireAvecPourcentageSupperieurA100() {
         //Given
@@ -121,6 +123,7 @@ public class EmployeTest {
         Assertions.assertThat(thrown).isInstanceOf(EmployeException.class).hasMessage("Pourcentage invalide");
     }
 
+    //test pour augmenterSalaire avec pourcentage valide
     @Test
     public void testAugmenterSalaireAvecPourcentageValide() {
         //Given
@@ -133,6 +136,7 @@ public class EmployeTest {
         Assertions.assertThat(employe.getSalaire()).isEqualTo(2750d);
     }
 
+    //test augmenter salaire avec temps partiel null
     @Test
     public void testAugmenterSalaireAvecSalaireNull() {
         //Given
@@ -145,7 +149,7 @@ public class EmployeTest {
         Assertions.assertThat(thrown).isInstanceOf(EmployeException.class).hasMessage("Salaire null");
     }
 
-    //test paramettrer getNbRtt
+    //test parametrer getNbRtt
     @ParameterizedTest
     @CsvSource({
             "2019,4,0.5",
