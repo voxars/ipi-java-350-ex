@@ -96,6 +96,7 @@ public class EmployeTest {
         Assertions.assertThat(primeObtenue).isEqualTo(prime);
     }
 
+
     @Test
     public void testAugmenterSalaireAvecPourcentageNegatif() {
         //Given
@@ -167,5 +168,6 @@ public class EmployeTest {
         //then
         Assertions.assertThat(nbRttObtenue).isEqualTo(nbRtt);
     }
+
 
 }
