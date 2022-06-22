@@ -1,6 +1,5 @@
 package com.ipiecoles.java.java350.model;
 
-import com.ipiecoles.java.java350.exception.EmployeException;
 import com.ipiecoles.java.java350.model.Employe;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -193,7 +192,6 @@ public class EmployeTest {
         //then
         Assertions.assertThat(nbRttObtenue).isEqualTo(nbRtt);
     }
-
 
 
 }
