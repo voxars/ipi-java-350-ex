@@ -169,5 +169,31 @@ public class EmployeTest {
         Assertions.assertThat(nbRttObtenue).isEqualTo(nbRtt);
     }
 
+    //test paramettrer getNbRtt avec le premier jour de l'annee
+    @ParameterizedTest
+    @CsvSource({
+            "2019,4,0.5,1",
+            "2020,10,1.0,1",
+            "2021,11,1.0,1",
+            "2022,5,0.5,1",
+            "2023,9,1.0,1",
+            "2024,9,1.0,1",
+            "2025,4,0.5,1"
+    })
+    public void testGetNbRttJourDeLaSemaine( Integer annee, Integer nbRtt, Double tempsPartiel, Integer jour) {
+        //given
+        LocalDate dateTest = LocalDate.of(annee, 1, jour);
+        Employe employe = new Employe();
+        employe.setTempsPartiel(tempsPartiel);
+
+
+        //when
+        Integer nbRttObtenue = employe.getNbRtt(dateTest);
+
+        //then
+        Assertions.assertThat(nbRttObtenue).isEqualTo(nbRtt);
+    }
+
+
 
 }
