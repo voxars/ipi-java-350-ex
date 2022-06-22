@@ -1,0 +1,155 @@
+22-06-2022 16:51:56.663 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:51:56.667 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:51:56.674 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 16:51:56.692 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:51:56.693 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:51:56.693 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 16:51:56.700 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:51:56.700 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 16:51:56.705 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 16:51:56.706 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:51:56.706 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 16:51:56.708 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 16:51:56.709 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 16:52:39.914 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:52:39.919 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:52:39.930 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 16:52:39.950 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:52:39.950 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:52:39.950 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 16:52:39.960 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:52:39.961 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 16:52:39.968 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 16:52:39.968 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:52:39.968 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 16:52:39.971 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 16:52:39.971 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 16:52:44.010 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:52:44.013 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:52:44.020 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 16:52:44.036 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:52:44.036 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:52:44.036 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 16:52:44.042 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 16:52:44.042 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 16:52:44.048 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 16:52:44.048 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 16:52:44.049 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 16:52:44.051 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 16:52:44.051 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:01:29.939 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:01:29.943 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:01:29.949 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 17:01:29.966 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:01:29.966 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:01:29.966 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 17:01:29.973 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:01:29.973 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 17:01:29.978 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 17:01:29.979 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:01:29.979 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 17:01:29.981 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 17:01:29.981 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:03:46.582 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:03:46.586 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:03:46.592 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 17:03:46.616 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:03:46.616 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:03:46.616 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 17:03:46.624 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:03:46.624 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 17:03:46.629 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 17:03:46.629 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:03:46.630 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 17:03:46.631 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 17:03:46.632 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:07:03.888 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:07:03.891 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:07:03.898 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 17:07:03.921 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:07:03.921 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:07:03.921 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 17:07:03.928 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:07:03.928 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 17:07:03.931 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 17:07:03.931 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:07:03.931 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 17:07:03.933 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 17:07:03.934 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:07:52.157 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:07:52.160 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:07:52.166 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 17:07:52.178 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:07:52.178 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:07:52.179 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 17:07:52.182 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:07:52.182 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 17:07:52.185 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 17:07:52.185 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:07:52.186 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 17:07:52.188 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 17:07:52.188 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:29:46.363 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:29:46.366 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:29:46.373 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 17:29:46.386 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:29:46.387 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:29:46.387 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 17:29:46.390 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:29:46.391 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 17:29:46.394 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 17:29:46.395 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:29:46.395 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 17:29:46.476 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 17:29:46.477 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:30:03.462 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:30:03.465 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:30:03.472 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 17:30:03.484 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:30:03.484 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:30:03.484 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 17:30:03.488 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:30:03.488 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 17:30:03.491 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 17:30:03.492 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:30:03.492 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 17:30:03.549 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 17:30:03.550 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:30:59.760 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:30:59.763 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:30:59.769 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=null}
+22-06-2022 17:30:59.782 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:30:59.782 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:30:59.782 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - L'employé de matricule T00001 existe déjà en BDD
+22-06-2022 17:30:59.786 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - null
+22-06-2022 17:30:59.786 ERROR c.i.j.java350.service.EmployeService.embaucheEmploye - Limite des 100000 matricules atteinte !
+22-06-2022 17:30:59.789 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 17:30:59.790 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 17:30:59.790 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 17:30:59.847 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 0.5
+22-06-2022 17:30:59.848 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=null, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=836.67, performance=1, tempsPartiel=0.5}
+22-06-2022 17:34:32.048 INFO  c.i.j.j.r.EmployeRepositoryTest.logStarting - Starting EmployeRepositoryTest on DESKTOP-ARTHUR with PID 29584 (started by arthu in E:\OneDrive - Groupe IGS\java\ipi-java-350-ex)
+22-06-2022 17:34:32.049 INFO  c.i.j.j.r.EmployeRepositoryTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+22-06-2022 17:34:34.202 INFO  c.i.j.j.r.EmployeRepositoryTest.logStarted - Started EmployeRepositoryTest in 2.334 seconds (JVM running for 3.34)
+22-06-2022 17:34:45.822 INFO  c.i.j.j.r.EmployeRepositoryTest.logStarting - Starting EmployeRepositoryTest on DESKTOP-ARTHUR with PID 17544 (started by arthu in E:\OneDrive - Groupe IGS\java\ipi-java-350-ex)
+22-06-2022 17:34:45.823 INFO  c.i.j.j.r.EmployeRepositoryTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+22-06-2022 17:34:47.772 INFO  c.i.j.j.r.EmployeRepositoryTest.logStarted - Started EmployeRepositoryTest in 2.11 seconds (JVM running for 2.921)
+22-06-2022 18:28:38.030 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStarting - Starting EmployeServiceIntegrationTest on DESKTOP-ARTHUR with PID 28376 (started by arthu in E:\OneDrive - Groupe IGS\java\ipi-java-350-ex)
+22-06-2022 18:28:38.031 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+22-06-2022 18:28:40.022 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStarted - Started EmployeServiceIntegrationTest in 2.153 seconds (JVM running for 3.005)
+22-06-2022 18:28:44.737 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStarting - Starting EmployeServiceIntegrationTest on DESKTOP-ARTHUR with PID 16556 (started by arthu in E:\OneDrive - Groupe IGS\java\ipi-java-350-ex)
+22-06-2022 18:28:44.738 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+22-06-2022 18:28:46.659 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStarted - Started EmployeServiceIntegrationTest in 2.072 seconds (JVM running for 2.899)
+22-06-2022 18:28:46.790 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 18:28:46.829 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=2, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 18:28:46.887 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 18:28:46.888 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 18:28:46.890 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=6, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 18:28:58.459 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStarting - Starting EmployeServiceIntegrationTest on DESKTOP-ARTHUR with PID 24252 (started by arthu in E:\OneDrive - Groupe IGS\java\ipi-java-350-ex)
+22-06-2022 18:28:58.460 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+22-06-2022 18:29:00.436 INFO  c.i.j.j.i.EmployeServiceIntegrationTest.logStarted - Started EmployeServiceIntegrationTest in 2.137 seconds (JVM running for 2.977)
+22-06-2022 18:29:00.575 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 18:29:00.616 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=2, nom='oui', prenom='non', matricule='T11112', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}
+22-06-2022 18:29:00.674 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - debut embaucheEmploye avec l'employe: oui - non - TECHNICIEN - BAC - 1.0
+22-06-2022 18:29:00.676 WARN  c.i.j.java350.service.EmployeService.embaucheEmploye - Aucun employe trouvé, initialisation du matricule initial 00000
+22-06-2022 18:29:00.678 INFO  c.i.j.java350.service.EmployeService.embaucheEmploye - employe sauvegardé: Employe{id=6, nom='oui', prenom='non', matricule='T00001', dateEmbauche=2022-06-22, salaire=1673.34, performance=1, tempsPartiel=1.0}

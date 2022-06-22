@@ -1,5 +1,7 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -63,18 +65,21 @@ public class Employe {
     }
 
     public Integer getNbRtt(LocalDate d){
-        int i1 = d.isLeapYear() ? 365 : 366;int var = 104;
+        int nbJoursAnnee = d.isLeapYear() ? 366 : 365;
+        int nbSamediDimanche = 104;
+        int nbJoursFerierHorsWeekend = (int) Entreprise.joursFeries(d).stream().filter(localDate -> localDate.getDayOfWeek().getValue() <= DayOfWeek.FRIDAY.getValue()).count();
         switch (LocalDate.of(d.getYear(),1,1).getDayOfWeek()){
-        case THURSDAY: if(d.isLeapYear()) var =  var + 1; break;
-        case FRIDAY:
-        if(d.isLeapYear()) var =  var + 2;
-        else var =  var + 1;
-case SATURDAY:var = var + 1;
-                    break;
+            case FRIDAY:
+                if(d.isLeapYear()) nbSamediDimanche =  nbSamediDimanche + 1;
+                break;
+            case SATURDAY:
+                if(d.isLeapYear()) nbSamediDimanche =  nbSamediDimanche + 2;
+                else nbSamediDimanche =  nbSamediDimanche + 1;
+                break;
+            default:
+                break;
         }
-        int monInt = (int) Entreprise.joursFeries(d).stream().filter(localDate ->
-                localDate.getDayOfWeek().getValue() <= DayOfWeek.FRIDAY.getValue()).count();
-        return (int) Math.ceil((i1 - Entreprise.NB_JOURS_MAX_FORFAIT - var - Entreprise.NB_CONGES_BASE - monInt) * tempsPartiel);
+        return (int) Math.ceil((nbJoursAnnee - Entreprise.NB_JOURS_MAX_FORFAIT - nbSamediDimanche - Entreprise.NB_CONGES_BASE - nbJoursFerierHorsWeekend) * tempsPartiel);
     }
 
     /**
@@ -113,7 +118,18 @@ case SATURDAY:var = var + 1;
     }
 
     //Augmenter salaire
-    //public void augmenterSalaire(double pourcentage){}
+    public void augmenterSalaire(double pourcentage) throws EmployeException {
+        //Exceptions
+        if(pourcentage < 0 || pourcentage > 100){
+            throw new EmployeException("Pourcentage invalide");
+        }
+        if(this.salaire == null){
+            throw new EmployeException("Salaire null");
+        }
+        //Calcul du nouveau salaire
+        double salaire = getSalaire();
+        this.salaire = salaire * (1 + pourcentage / 100);
+    }
 
     public Long getId() {
         return id;
