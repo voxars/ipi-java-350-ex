@@ -60,21 +60,4 @@ public class EmployeRepositoryTest {
         //then
         Assertions.assertThat(matricule).isEqualTo("654321");
     }
-
-    @Test
-    public void testAvgPerformance(){
-        //given
-        Employe employe = new Employe("Jhon","Doe","M111222", LocalDate.now(),1000.0,1,1.0);
-        Employe employe1 = new Employe("Jhon","Doe","C654321", LocalDate.now(),1000.0,3,1.0);
-        Employe employe2 = new Employe("Jhon","Doe","M246800", LocalDate.now(),1000.0,4,1.0);
-        employeRepository.save(employe);
-        employeRepository.save(employe1);
-        employeRepository.save(employe2);
-
-        //when
-        Double avgPerformance = employeRepository.avgPerformanceWhereMatriculeStartsWith("M");
-
-        //then
-        Assertions.assertThat(avgPerformance).isEqualTo(2.5);
-    }
 }

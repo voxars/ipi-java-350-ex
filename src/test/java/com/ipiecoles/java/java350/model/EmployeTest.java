@@ -1,6 +1,5 @@
 package com.ipiecoles.java.java350.model;
 
-import com.ipiecoles.java.java350.exception.EmployeException;
 import com.ipiecoles.java.java350.model.Employe;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -96,78 +95,4 @@ public class EmployeTest {
         //Then
         Assertions.assertThat(primeObtenue).isEqualTo(prime);
     }
-
-    @Test
-    public void testAugmenterSalaireAvecPourcentageNegatif() {
-        //Given
-        Employe employe = new Employe("Doe", "John", "M123456", LocalDate.now().minusYears(10), 2500d, 0, 1.0);
-
-        //When
-        Throwable thrown = Assertions.catchThrowable(() -> employe.augmenterSalaire(-10));
-
-        //Then
-        Assertions.assertThat(thrown).isInstanceOf(EmployeException.class).hasMessage("Pourcentage invalide");
-    }
-
-    @Test
-    public void testAugmenterSalaireAvecPourcentageSupperieurA100() {
-        //Given
-        Employe employe = new Employe("Doe", "John", "M123456", LocalDate.now().minusYears(10), 2500d, 0, 1.0);
-
-        //When
-        Throwable thrown = Assertions.catchThrowable(() -> employe.augmenterSalaire(110));
-
-        //Then
-        Assertions.assertThat(thrown).isInstanceOf(EmployeException.class).hasMessage("Pourcentage invalide");
-    }
-
-    @Test
-    public void testAugmenterSalaireAvecPourcentageValide() {
-        //Given
-        Employe employe = new Employe("Doe", "John", "M123456", LocalDate.now().minusYears(10), 2500d, 0, 1.0);
-
-        //When
-        Throwable thrown = Assertions.catchThrowable(() -> employe.augmenterSalaire(10));
-
-        //Then
-        Assertions.assertThat(employe.getSalaire()).isEqualTo(2750d);
-    }
-
-    @Test
-    public void testAugmenterSalaireAvecSalaireNull() {
-        //Given
-        Employe employe = new Employe("Doe", "John", "M123456", LocalDate.now().minusYears(10), null, 0, 1.0);
-
-        //When
-        Throwable thrown = Assertions.catchThrowable(() -> employe.augmenterSalaire(10));
-
-        //Then
-        Assertions.assertThat(thrown).isInstanceOf(EmployeException.class).hasMessage("Salaire null");
-    }
-
-    //test paramettrer getNbRtt
-    @ParameterizedTest
-    @CsvSource({
-            "2019,4,0.5",
-            "2020,10,1.0",
-            "2021,11,1.0",
-            "2022,5,0.5",
-            "2023,9,1.0",
-            "2024,9,1.0",
-            "2025,4,0.5"
-    })
-    public void testGetNbRtt( Integer annee, Integer nbRtt, Double tempsPartiel) {
-        //given
-        LocalDate dateTest = LocalDate.of(annee, 1, 1);
-        Employe employe = new Employe();
-        employe.setTempsPartiel(tempsPartiel);
-
-        //when
-        Integer nbRttObtenue = employe.getNbRtt(dateTest);
-
-        //then
-        Assertions.assertThat(nbRttObtenue).isEqualTo(nbRtt);
-    }
-
-
 }
